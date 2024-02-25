@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="anime.css">
+    <title>Anime World</title>
+</head>
+
+<body>
+    <script>
+        function showSidebar(){
+            const sidebar=document.querySelector('.sideBar');
+            sidebar.style.display='flex';
+        }
+        function hideShowbar(){
+            const sidebar=document.querySelector('.sideBar');
+            sidebar.style.display='none';
+        }
+    </script>
+    <div class="head">
+        <nav>
+            <img class="logoImg" src="./images\logo1.png" alt="logo">
+            <form class="searchBar">
+                <input class="search" type="search" placeholder="Search">
+                <button class="search1" type="submit">Search</button>
+              </form>
+              <ul class="sideBar">
+                <li onclick="hideShowbar()"><a href="#"><i class="fa fa-times fa-2x"></i></a></li>
+                <li id="list"><a class="anker" href="anime.html">Home</a></li>
+                <li id="list"><a class="anker" href="categories.html">Categories</a></li>
+                <li id="list"><a class="anker" href="history.html">History</a></li>
+                <li id="list"><a class="anker" href="aboutus.html">About us</a></li>
+            </ul>
+              <ul>
+                <li id="list" class="hideOnMobile"><a class="anker" href="anime.html">Home</a></li>
+                <li id="list" class="hideOnMobile"><a class="anker" href="categories.html">Categories</a></li>
+                <li id="list" class="hideOnMobile"><a class="anker" href="history.html">History</a></li>
+                <li id="list" class="hideOnMobile"><a class="anker" href="aboutus.html">About us</a></li>
+                <li class="menuButton" onclick="showSidebar()"><a href="#"><i class="fa fa-bars fa-2x"></i></a></li>
+                
+            </ul>
+        </nav><br>
+    </div><br><br>
+    <div class="container">
+        <span style="--i:1;"><img class="image" src="./images\naruto.jpg"></span>
+        <span style="--i:2;"><img class="image" src="./images\death note.jpg"></span>
+        <span style="--i:3;"><img class="image" src="./images\demonslayer.jpg"></span>
+        <span style="--i:4;"><img class="image" src="./images\drstone.jpg"></span>
+        <span style="--i:5;"><img class="image" src="./images\hunter.jpg"></span>
+        <span style="--i:6;"><img class="image" src="./images\jujutsu kaisen.jpg"></span>
+        <span style="--i:7;"><img class="image" src="./images\onepiece.jpg"></span>
+        <span style="--i:8;"><img class="image" src="./images\overload.jpg"></span>
+        <span style="--i:9;"><img class="image" src="./images\suzume.jpg"></span>
+        <span style="--i:10;"><img class="image" src="./images\the beginning.jpg"></span>
+    </div>
+</body>
+
+</html>
