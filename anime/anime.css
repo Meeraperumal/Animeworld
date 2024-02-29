@@ -147,6 +147,53 @@ nav ul #list{
         transform:perspective(1000px) rotateY(360deg);
     }
 }
+.im {
+    display: flex;
+    margin-top: 10%;
+    margin-bottom: 2px;
+}
+
+.pop {
+    width: 200px;
+    height: 250px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.pop:hover {
+    border: 2px solid red;
+}
+
+#popular {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#par {
+    display: flex;
+    background-color: red;
+    height: 250px;
+    align-items: center;
+}
+
+#scroll {
+    overflow-x: scroll;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#scroll::-webkit-scrollbar {
+    scrollbar-width: thin;
+}
+#scroll::-webkit-scrollbar-thumb {
+    background-color: red;
+    border-radius: 20px;
+}
 .card{
     width:220px;
     height: 350px;
@@ -204,7 +251,7 @@ nav ul #list{
     justify-content: center; 
     align-items: center;
     flex-wrap: wrap;
-    margin:80px;
+    margin:60px;
 }
 .para{
     color:gold;
@@ -308,7 +355,7 @@ footer{
         display:none;
     }
     .menuButton{
-        display:block;
+        display:inline-block;
     }
     .image{
         width:80px;
@@ -387,19 +434,24 @@ footer{
         line-height: 20px;
         flex-wrap: wrap;
     }
-    .card{
-        width:110px;
-        height: 240px;
+    .im {
+        margin-top: 70%;
+        margin-bottom: 2px;
     }
-    .image1{
-        width:110px;
-        height:180px;
+    .pop {
+        width: 100px;
+        height: 150px;
     }
-    .name{
-        font-size:12px;
+    #popular {
+        font-size: 10px;
     }
-    .name1{
-        font-size:12px;
+
+    #par {
+        height: 150px;
+    }
+    #last{
+        width:300px;
+        height:250px;
     }
 }
 
@@ -416,7 +468,7 @@ footer{
         display:none;
     }
     .menuButton{
-        display:block;
+        display:inline-block;
     }
     .image{
         width:100px;
@@ -467,19 +519,20 @@ footer{
         width:200px;
         height:300px;
     }
-    .card{
-        width:150px;
-        height: 240px;
+    .im {
+        margin-top: 5%;
+        margin-bottom: 2px;
     }
-    .image1{
-        width:150px;
-        height:180px;
+    .pop {
+        width: 150px;
+        height: 200px;
     }
-    .name{
-        font-size:15px;
+    #popular {
+        font-size: 13px;
     }
-    .name1{
-        font-size:15px;
+
+    #par {
+        height: 200px;
     }
 }
 
@@ -496,7 +549,7 @@ footer{
         display:none;
     }
     .menuButton{
-        display:block;
+        display:inline-block;
     }
     .image{
         width:150px;
@@ -538,7 +591,7 @@ footer{
 @media screen and (max-width: 1200px) and (min-width: 1024px) {
     body {
         width: auto;
-        height: 1500px;
+        min-height: 110vh;
         background-image: url('https://i.gifer.com/3lFW.gif');
         background-repeat: no-repeat;
         background-size: 100%;
@@ -547,7 +600,7 @@ footer{
         display:none;
     }
     .menuButton{
-        display:block;
+        display:inline-block;
     }
     
 }
