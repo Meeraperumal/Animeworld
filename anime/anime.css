@@ -453,6 +453,21 @@ footer{
         width:300px;
         height:250px;
     }
+    .card{
+        width:120px;
+        height: 240px;
+    }
+    .image1{
+        width:120px;
+        height:180px;
+    }
+    .name{
+        font-size:12px;
+    }
+    .name1{
+        font-size:12px;
+        margin-right: 10px;
+    }
 }
 
 /*for tablet and ipad*/
@@ -533,6 +548,21 @@ footer{
 
     #par {
         height: 200px;
+    }
+    .card{
+        width:140px;
+        height: 250px;
+    }
+    .image1{
+        width:140px;
+        height:180px;
+    }
+    .name{
+        font-size:15px;
+    }
+    .name1{
+        font-size:15px;
+        margin-right: 10px;
     }
 }
 
